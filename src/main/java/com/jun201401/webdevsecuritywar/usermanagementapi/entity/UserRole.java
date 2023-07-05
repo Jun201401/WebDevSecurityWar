@@ -23,9 +23,9 @@ public class UserRole {
     @EqualsAndHashCode
     public static class Pk implements Serializable {
         @Column(name = "users_id")
-        private Long userId;
+        private String userId;
         @Column(name = "roles_id")
-        private Long roleId;
+        private int roleId;
     }
 
     @MapsId("userId")
