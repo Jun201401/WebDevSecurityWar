@@ -3,9 +3,9 @@ package com.jun201401.webdevsecuritywar.usermanagementapi.service.user;
 import com.jun201401.webdevsecuritywar.usermanagementapi.dto.user.PostUserDto;
 import com.jun201401.webdevsecuritywar.usermanagementapi.entity.User;
 import com.jun201401.webdevsecuritywar.usermanagementapi.repository.user.UserRepository;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
