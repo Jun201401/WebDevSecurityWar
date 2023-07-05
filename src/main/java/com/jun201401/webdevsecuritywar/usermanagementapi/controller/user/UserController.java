@@ -7,7 +7,7 @@ import com.jun201401.webdevsecuritywar.usermanagementapi.exception.DuplicateUser
 import com.jun201401.webdevsecuritywar.usermanagementapi.exception.ValidationFailedException;
 import com.jun201401.webdevsecuritywar.usermanagementapi.repository.user.UserRepository;
 import com.jun201401.webdevsecuritywar.usermanagementapi.service.user.UserService;
-import jakarta.validation.Valid;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/users")
