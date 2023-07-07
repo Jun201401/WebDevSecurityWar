@@ -1,0 +1,3 @@
+### 회원 정보 단건 조회1
+GET /users/user1
+Host: localhost:9090

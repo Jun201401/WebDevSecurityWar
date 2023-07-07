@@ -10,14 +10,12 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "authorities")
+public class Authority {
     @Id
+    @Column(name = "id")
     private String id;
-    private String password;
-    private String nickname;
-    private String email;
-    @ManyToOne
-    @JoinColumn(name = "authorities_id")
-    private Authority userAuthority;
+
+    @Column(name = "name")
+    private String name;
 }
