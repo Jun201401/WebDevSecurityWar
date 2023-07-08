@@ -15,6 +15,7 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     @Override
+    @Transactional(readOnly = true)
     public GetUserDto getUser(String userId) {
         return userRepository.getUser(userId);
     }
